@@ -45,24 +45,24 @@ footer{
 }
 
 #footerelem :nth-child(1) {
-    background-image:url('/src/icons/icons8-insta-100.png') ;
+    background-image:url('src/icons/icons8-insta-100.png') ;
     background-size: cover;
     background-repeat: no-repeat;
 }
 #footerelem :nth-child(2) {
-    background-image:url('/src/icons/icons8-démangeaison-io-100.png') ;
+    background-image:url('src/icons/icons8-démangeaison-io-100.png') ;
     background-size: cover;
     background-repeat: no-repeat;
 }
 #footerelem :nth-child(3) {
-    background-image:url('/src/icons/icons8-twitter-100.png') ;
+    background-image:url('src/icons/icons8-twitter-100.png') ;
     background-size:90%;
     background-position-y: center;
     background-position-x: center;
     background-repeat: no-repeat;
 }
 #footerelem :nth-child(4) {
-    background-image:url('/src/icons/icons8-youtube-100.png') ;
+    background-image:url('src/icons/icons8-youtube-100.png') ;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -71,7 +71,7 @@ footer{
     position: absolute;
     width: 180px;
     left: 0;
-    background-image:url('/src/RoelLogo.png') ;
+    background-image:url('src/RoelLogo.png') ;
     background-size: contain;
     background-repeat: no-repeat;
 }
