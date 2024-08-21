@@ -29,10 +29,10 @@
     justify-content: end;
 }
 #aboutinfo :nth-child(1){
-    background-image: url("/prjct/src/icons/icons8-cv-100.png");
+    background-image: url("src/icons/icons8-cv-100.png");
 }
 #aboutinfo :nth-child(2){
-    background-image: url("/prjct/src/icons/iconslinkedin100.png");
+    background-image: url("src/icons/iconslinkedin100.png");
 }
 #aboutinfo > *{
     transition: transform 0.4s ease;
@@ -64,7 +64,7 @@
     width: 70%;
 }
 #aboutelem :nth-child(2){
-    background-image: url(/prjct/src/gustracer.png);
+    background-image: url(src/gustracer.png);
     background-size:cover;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -85,7 +85,7 @@
         .mailLink{
             letter-spacing: 10px;
             transition: transform 0.4s ease;
-            background-image: url(/prjct/src/icons/icons8-email-100.png);
+            background-image: url(src/icons/icons8-email-100.png);
             background-size: contain;
             background-repeat:no-repeat;
             height: 60px;
@@ -163,7 +163,7 @@ html{
 #logo{
     width: 100%;
     height: 80px;
-    background-image: url(/prjct/src/RoelLogo.png);
+    background-image: url(src/RoelLogo.png);
     background-repeat: no-repeat;
     background-size: contain;
     /* background-color: rgb(152, 65, 65); */
@@ -217,7 +217,7 @@ html{
         /* background-color: white; */
     }
     .one{
-        background-image: url(/prjct/src/e.png);
+        background-image: url(src/e.png);
         background-size:50%;
         background-position-y: center;
         background-position-x: center;
@@ -225,7 +225,7 @@ html{
         background-color: rgb(24, 130, 79);
     }
     .two{
-        background-image: url(/prjct/src/gustracer.png);
+        background-image: url(src/gustracer.png);
         background-size:cover;
         /* opacity: 60%; */
         background-position-y: center;
@@ -235,7 +235,7 @@ html{
         /* background-color: blue; */
     }
     .three{
-        background-image: url(/prjct/src/Bly_txtWhite.svg);
+        background-image: url(src/Bly_txtWhite.svg);
         background-size:65%;
         background-position-y: center;
         background-position-x: center;
@@ -244,7 +244,7 @@ html{
         /* opacity: 60%; */
     }
     .four{
-        background-image: url(/prjct/src/warriorstriker.png);
+        background-image: url(src/warriorstriker.png);
         background-size:cover;
         /* background-position-y: center;
         background-position-x: center; */
@@ -253,7 +253,7 @@ html{
         /* opacity: 60%; */
     }
     .five{
-        background-image: url(/prjct/src/metalbirds.png);
+        background-image: url(src/metalbirds.png);
         background-size:cover;
         /* background-position-y: center;
         background-position-x: center; */
