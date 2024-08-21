@@ -1,0 +1,85 @@
+.center{
+    display: flex;
+    justify-content: center;
+}
+#language{
+    width: 70px;
+    height: 80px;
+    background-image: url(/prjct/src/icons/en.png);
+    background-position-y:center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+#language:hover{
+    transform: scale(1.1);
+}
+footer{
+    color: white;
+    text-align: center;
+    background-color: rgb(59, 59, 59);
+    border-top: 40px solid rgb(59, 59, 59);
+    border-bottom: 40px solid rgb(59, 59, 59);
+}
+#footerelem{
+    /* margin-top: 40px; */
+    width: 100%;
+    height: 120px;
+    display: flex;
+    position: relative;
+    /* flex-direction: row; */
+    justify-content:center;
+}
+#footerelem > * {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    /* background-color: goldenrod; */
+    /* width: 10%; */
+}
+#footerelem > *:hover{
+    /* background-color: rgba(255, 255, 255, 0.468); */
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+
+#footerelem :nth-child(1) {
+    background-image:url('/src/icons/icons8-insta-100.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#footerelem :nth-child(2) {
+    background-image:url('/src/icons/icons8-démangeaison-io-100.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#footerelem :nth-child(3) {
+    background-image:url('/src/icons/icons8-twitter-100.png') ;
+    background-size:90%;
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+#footerelem :nth-child(4) {
+    background-image:url('/src/icons/icons8-youtube-100.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#footerelem :nth-child(5) {
+    display:block;
+    position: absolute;
+    width: 180px;
+    left: 0;
+    background-image:url('/src/RoelLogo.png') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 750px) {
+    #footerelem > * {
+        width: 40px;
+        height: 40px;
+        margin: 20px;
+    }
+    #footerelem :nth-child(5) {display: none;}
+  }

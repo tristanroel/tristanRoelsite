@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <title>Bot LightYear</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kumbh+Sans:wght@800&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kumbh+Sans:wght@800&family=Orbitron:wght@400..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            image-rendering: pixelated;
+            /* font-family: "Kanit", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 3px; */
+            font-family: "Orbitron", sans-serif;
+            font-weight:500;
+            font-style: normal;
+            /* color: rgb(49, 49, 49); */
+        }
+        .bcolor2{
+            background-color: #2D3A54;
+            color: #ffffff;
+        }
+        .bcolor1{
+            background-color: #ffffff;
+        }
+        body{
+            background-color: rgb(39, 39, 39);;
+        }
+        #ctr0{
+            display: flex;
+            justify-content: center;
+            /* background-color: rgb(255, 255, 255);
+            background-color: #2D3A54; */
+            /* background-color: rgb(59, 59, 59);; */
+            background-color: rgb(39, 39, 39);;
+
+
+
+        }
+        #ctn0{
+            /* background-color: rgb(31, 31, 31); */
+            width: 70%;
+            /* position: relative; */
+            /* height: 100vh; */
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* justify-content: center; */
+        }
+        .returnbtn{
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            bottom: 10px;
+            left: 10px;
+            /* background-color: brown; */
+            button{
+                height: 100px;
+                width: 100%;
+                background-image: url(src/icons/icons8-retour-101.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: rgba(255, 255, 255, 0);
+                border: 0;
+            }
+            button:hover{
+                /* background-color: aqua; */
+                transform: scale(1.1);
+            } ;
+        }
+        .backgrnd_img{
+            background-image: url(src/docs/bly_bckgrnd1.png);
+            background-size: 160%;
+            background-repeat: no-repeat;
+            background-position-x:center ;
+            background-position-y:center ;
+            height: 400px;
+            /* opacity: 0.7; */
+            background-color: antiquewhite;
+            /* width: 100%; */
+            
+        }
+        #banner0{
+            /* opacity: 1; */
+            background-image: url(src/Bly_txtWhite.svg);
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position-x:center ;
+            background-position-y:center ;
+            width: 100%;
+            height: 300px;
+            /* background-color: aqua; */
+        }
+        #bannerinfo{
+            padding: 10px;
+            display: flex;
+            justify-content: end;
+        }
+        .text0{
+            /* background-color: aqua; */
+            margin: 30px 0;
+            width: 60%;
+            span{
+                font-weight: 800;
+            }
+        }
+        .itm{
+            display: flex;
+            justify-content: center;
+        }
+        .itm2{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .zone1 {
+            background-image: url(src/docs/Lyb_normal.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x:center ;
+            background-position-y:center ;
+            width: 50%;
+            height: 200px;
+        }
+        .zone2 {
+            background-color: rgb(255, 255, 255);
+            background-image: url(src/docs/normal_black_trensparent.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x:center ;
+            background-position-y:center ;
+            width: 50%;
+            height: 200px;
+        }
+        .zone3 {
+            background-color: #2D3A54;
+            background-image: url(src/docs/Bly_whiteTransparent.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x:center ;
+            background-position-y:center ;
+            width: 50%;
+            height: 400px;
+        }
+        .zone4 {
+            background-color: #2D3A54;
+            background-image: url(src/Bly_txtWhite.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x:center ;
+            background-position-y:center ;
+            width: 50%;
+            height: 400px;
+        }
+        .illu0{
+            background-image: url(src/docs/Bly_LogosPub_troel_ex.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x:center ;
+            background-position-y:center ;
+            /* background-color: #2D3A54; */
+            background-color: #ffffff;
+            width: 100%;
+            /* aspect-ratio: 1 / 1; */
+            height: 600px;
+        }
+        .illu1{
+            /* background-color: #6087d6; */
+            background-color: #ffffff;
+            background-image: url(src/docs/bly_tshirts_trsp1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x:center ;
+            background-position-y:center ;
+            /* background-color: aquamarine; */
+            width: 100%;
+            height: 400px;
+        }
+        .illu2{
+            /* background-color: #0f47b8; */
+            background-color: #ffffff;
+            background-image: url(src/docs/Bly_sweat.png);
+            background-size:70%;
+            background-repeat: no-repeat;
+            background-position-x:center ;
+            background-position-y:center ;
+            width: 100%;
+            height: 500px;
+        }
+        .illu3{
+            background-image: url(src/docs/Bly_whiteTransparent.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x:center ;
+            background-position-y:center ;
+            /* background-color: white; */
+            width: 100%;
+            height: 400px;
+        }
+        @media screen and (max-width: 750px) {
+            .backgrnd_img{background-size: 250%;height: 200px;}
+            #banner0{height: 200px;}
+            #bannerinfo{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            #ctn0{width: 100%;}
+            .text0{width: 90%;}
+            iframe{width: 90%;}
+            .illu0{height: 400px;}
+            .illu1{height: 300px;}
+            .illu2{background-size: 100%;height: 300px;}
+            .illu3{background-size: 70%;height: 200px;}
+            .itm2{width: 100%;height: 200px;}
+            .zone3{height: 200px;}
+            .zone4{height: 200px;}
+            /* .itm2 :nth-child(1) {width: 100%;}
+            .itm2 :nth-child(2) {width: 100%;} */
+        }
+    </style>
+</head>
+<body>
+    <a class="returnbtn" href="index.html"><button></button></a>
+    <div id="ctr0">
+        <div id="ctn0">
+            <div class="backgrnd_img">
+                <div id="bannerinfo">
+                    <button id="language" onclick="ChangeLanguage()"></button>
+                </div>
+                <div id="banner0"></div>
+            </div>
+            <div class="itm bcolor1">
+                <div class="text0">
+                    <p class="frtext">
+                        <span>
+                            ■ Développé avec le moteur Unity, utilisant Blender pour la modélisation des environnements et des modèles 3D, ainsi que l'API .NET pour le back-end.
+                        </span>
+                    </p>
+                    <p class="entext">
+                        <span>
+                            ■ Developed using the Unity engine, with Blender for environment and 3D model creation, and the .NET API for the back-end.
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="illu0"></div>
+            <div class="itm bcolor1">
+                <div class="text0 frtext">
+                    <p>
+                        Le joueur incarnera son propre pilote et devra remporter plusieurs courses et compétitions contre jusqu'à 20 adversaires.<br><br>
+                        La trame principale du jeu réside dans le mode carrière, où le joueur doit réussir plusieurs courses et défis pour accéder à des compétitions.<br>
+                    </p>
+                </div>
+                <div class="text0 entext">
+                    <p>
+                        The player will embody their own driver and must win multiple races and competitions against up to 20 opponents.<br><br>
+                        The main storyline of the game revolves around the career mode, where the player must complete several races and challenges to access competitions.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="illu1"></div>
+            <div class="illu2"></div>
+            <!-- <div class="itm">
+               <div class="itm2">
+                <div class="zone1"></div>
+                <div class="zone2"></div>
+               </div>
+            </div> -->
+            <div class="itm bcolor2">
+                <div class="text0 frtext">
+                    <p>
+                        Le joueur incarnera son propre pilote et devra remporter plusieurs courses et compétitions contre jusqu'à 20 adversaires.<br><br>
+                        La trame principale du jeu réside dans le mode carrière, où le joueur doit réussir plusieurs courses et défis pour accéder à des compétitions.<br>
+                        Remporter des récompenses lors de ces compétitions permet de monter en rang et de débloquer de nouvelles étapes.<br><br>
+                        Tout au long du jeu, le joueur gagnera des crédits en fonction de son score lors des épreuves.<br>
+                        Ces crédits pourront être utilisés pour acheter d'autres véhicules, des améliorations, des éléments de personnalisation, et probablement bien d'autres choses...
+                        <br><br>
+                    </p>
+                </div>
+                <div class="text0 entext">
+                    <p>
+                        The player will embody their own driver and must win multiple races and competitions against up to 20 opponents.<br><br>
+                        The main storyline of the game revolves around the career mode, where the player must complete several races and challenges to access competitions.<br>
+                        Winning rewards in these competitions allows the player to rank up and unlock new stages.<br><br>
+                        Throughout the game, the player will earn credits based on their performance in events.<br>
+                        These credits can be spent on new vehicles, upgrades, customization options, and likely more...
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="itm">
+                <div class="itm2">
+                 <div class="zone3"></div>
+                 <div class="zone4"></div>
+                </div>
+             </div>
+            <!-- <div class="backgrnd_img">
+                <div class="illu3"></div>
+            </div> -->
+            <!-- <div class="itm">
+                <div class="text0">
+                    <p class="frtext">
+                        Le joueur pourra enregistrer ses scores et ses temps, et comparer ses résultats avec ses amis ainsi qu'avec d'autres joueurs du monde entier.<br><br>
+                        Le jeu mettra en avant la Belgique avec des courses se déroulant dans des lieux emblématiques du pays, accompagnées d'une playlist musicale composée par des artistes belges.<br><br>
+                        Une sortie sur Steam, Android, et iOS est prévue, ainsi qu'une éventuelle version console.<br>
+                        Le jeu est actuellement en cours de développement.<br><br>
+                        Une première démo jouable sera disponible d'ici le 1er janvier 2025.<br><br>
+                        <span>Tristan ROEL</span>
+                        <br><br><br>
+                        <br><br><br>
+                    </p>
+                    <p class="entext">
+                        The player will be able to save their scores and times, and compare their results with friends and other players worldwide.<br><br>
+                        The game will promote Belgium by featuring races in well-known locations across the country, along with a musical playlist created by Belgian artists.<br><br>
+                        A release on Steam, Android, and iOS is planned, with a potential console version as well.<br>
+                        The game is currently in development.<br><br>
+                        A first playable demo will be available by January 1st, 2025.<br><br>
+                        <span>Tristan ROEL</span>
+                        <br><br><br>
+                        <br><br><br>
+                    </p>
+                </div>
+            </div> -->
+            <footer>
+                <div id="footerelem">
+                    <a href="https://www.instagram.com/tristanroel/"target="_blank"></a>
+                    <a href="https://troel.itch.io/"target="_blank"></a>
+                    <a href="https://x.com/tristan_roel"target="_blank"></a>
+                    <a href="https://www.youtube.com/@tristanroel445"target="_blank"></a>
+                    <a href="index.html"></a>
+                </div>
+                <div><p style="color: white;">Copyright © 2024 t.roel</p></div>
+            </footer>  
+            <!-- <iframe src="src//docs//gust racer is an arcade racing game.pdf" width="100%" height="600px"></iframe> -->
+            <!-- <object data="src/docs/gust racer is an arcade racing game.pdf" type="application/pdf" width="100%" height="600px">
+                <p>Votre navigateur ne peut pas afficher les PDF. Vous pouvez <a href="path/to/your-file.pdf">télécharger le fichier PDF ici</a>.</p>
+            </object> -->
+            <!-- <a href="src/docs/gust racer is an arcade racing game.pdf" target="_blank">Ouvrir le PDF dans un nouvel onglet</a> -->
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

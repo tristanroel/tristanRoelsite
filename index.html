@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <title>Tristan Roel Portfolio
+    </title>
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <div id="banner">
+                <div id="logo"></div>
+                <button id="language" onclick="ChangeLanguage()"></button>
+            </div>
+            <div id="menu">
+                <button class="button prjctbtn" onclick="ViewProjects()"><h3 class="frtext">PROJETS</h3><h3 class="entext">PROJECTS</h3></button>
+                <button class="button aboutbtn" onclick="ViewAbout()"><h3 class="frtext">À PROPOS</h3><h3 class="entext">ABOUT ME</h3></button>
+            </div>
+            <div id="about">
+                <div id="aboutinfo">
+                    <a href="src/docs/gust racer is an arcade racing game.pdf" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/tristan-roel/" target="_blank"></a>
+                </div>
+                <div id="aboutelem">
+                    <div id="textpresentation">
+                        <p>BIEN LE BONJOUR,</p> 
+                        </br>
+                        je me nome tristan roel <i>"developpeur fullstack"</i>,
+                        passionné de devellopement informartique et de design et fasciné par 
+                        les nouvelles technologies
+                        </br>
+                        n'hesitez pas à me contacter 
+                        </br>
+                       TRISTAN ROEL
+                        </p>
+                    </div>
+                    <div></div>
+                </div>
+                <div id="mailelem">
+                    <form action="tristanroel@outlook.com" method="post" enctype="text/plain">
+                        <div class="mailLink">
+                            <a href="mailto:tristanroel@outlook.com"><p>tristanroel@outlook.com</p></a>
+                        </div>
+                        <input type="text" id="name" name="name" placeholder="NAME" required><br><br>
+                        <input type="email" id="email" name="email" placeholder="E-MAIL" required><br><br>
+                        <textarea id="message" name="message" placeholder="MESSAGE"  required></textarea><br><br>
+                        <div class="center">
+                            <input class="mailbtn" type="submit" value="ENVOYER">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="projects">
+                <div class="item">
+                    <h3>ECHO.BE</h3>
+                    <div class="imgproj one"></div>
+                    <div class="txt">
+                        <p>site web d'un magazine régional vervietois</p>
+                    </div>
+                    <div class="itemlogos">
+                        <p>ANGULAR, .NET, SQL, TYPESCRIPT, C#</p>
+                    </div>
+                    <div class="languette"></div>
+                </div>
+                <a href="gustRacer_presentation.html">
+                <div class="item">
+                    <h3>GUST RACER</h3>
+                    <div class="imgproj two"></div>
+                    <div class="txt">
+                        <p>projet unity, développement d'un jeu de course automobile arcade</p>
+                    </div>
+                    <div class="itemlogos">
+                        C#, UNITY, .NET
+                    </div>
+                    <div class="languette"></div>
+                </a>
+                </div>
+                <a href="botlightyear_presentation.html">
+                <div class="item">
+                    <h3>BOT LIGHT YEAR</h3>
+                    <div class="imgproj three"></div>
+                    <div class="txt">
+                        <p>design du logo d'une équipe universitaire de robotique</p>
+                    </div>
+                    <div class="itemlogos">
+                        <p>ADOBE PHOTOSHOP,ADOBE ILLUSTRATOR,CURVE</p>
+                    </div>
+                    <div class="languette"></div>
+                </a>
+                </div>
+                <div class="item">
+                    <h3>WARRIOR STRIKER</h3>
+                    <div class="imgproj four"></div>
+                    <div class="txt">
+                        <p>création d'un jeu d'action beat-em all, plateforme</p>
+                    </div>
+                    <div class="itemlogos">
+                        <p>PHASER.JS,JAVASCRIPT</p>
+                    </div>
+                    <div class="languette"></div>
+                </div>
+                <div class="item">
+                    <h3>METAL BIRDS</h3>
+                    <div class="imgproj five"></div>
+                    <div class="txt">
+                        <p>shoot em up 2D</p>
+                    </div>
+                    <div class="itemlogos">
+                        <p>PHASER.JS,TYPESRIPT</p>
+                    </div>
+                    <div class="languette"></div>
+                </div>
+                <div class="item">
+                    <div class="languette"></div>
+                </div>
+                <!-- <div class="item"></div>
+                <div class="item"></div> -->
+            </div>
+            <footer>
+                <div id="footerelem">
+                    <a href="https://www.instagram.com/tristanroel/"target="_blank"></a>
+                    <a href="https://troel.itch.io/"target="_blank"></a>
+                    <a href="https://x.com/tristan_roel"target="_blank"></a>
+                    <a href="https://www.youtube.com/@tristanroel445"target="_blank"></a>
+                    <a href="index.html"></a>
+                </div>
+                <div><p>Copyright © 2024 t.roel</p></div>
+            </footer>  
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
