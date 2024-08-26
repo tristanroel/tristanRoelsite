@@ -206,7 +206,7 @@ html{
     height: 400px;
     background-color: rgb(99, 99, 99);
     h3{
-        font-style: italic;
+        /* font-style: italic; */
         padding: 5px;
         background:none;
         font-weight: 700;
@@ -217,12 +217,12 @@ html{
         /* background-color: white; */
     }
     .one{
-        background-image: url(src/e.png);
-        background-size:50%;
+        background-image: url(src/docs/echologo1.png);
+        background-size:70%;
         background-position-y: center;
         background-position-x: center;
         background-repeat: no-repeat;
-        background-color: rgb(24, 130, 79);
+        background-color: #00bf63;
     }
     .two{
         background-image: url(src/gustracer.png);

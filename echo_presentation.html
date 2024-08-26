@@ -6,20 +6,23 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Bot LightYear</title>
     <style>
-       @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kumbh+Sans:wght@800&display=swap');
-       @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kumbh+Sans:wght@800&family=Orbitron:wght@400..900&display=swap');
-        *{
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kumbh+Sans:wght@800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+       *{
             margin: 0;
             padding: 0;
             image-rendering: pixelated;
-            /* font-family: "Kanit", sans-serif;
-            font-weight: 500;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 200;
             font-style: normal;
-            letter-spacing: 3px; */
-            font-family: "Orbitron", sans-serif;
-            font-weight:500;
+            font-optical-sizing: auto;
+            /* letter-spacing: 3px; */
             font-style: normal;
             /* color: rgb(49, 49, 49); */
+        }
+        body{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 200;
+            font-style: normal;
         }
         .bcolor2{
             background-color: #2D3A54;
@@ -29,7 +32,7 @@
             background-color: #ffffff;
         }
         body{
-            background-color: rgb(39, 39, 39);;
+            background-color: rgb(59, 59, 59);
         }
         #ctr0{
             display: flex;
@@ -37,13 +40,15 @@
             /* background-color: rgb(255, 255, 255);
             background-color: #2D3A54; */
             /* background-color: rgb(59, 59, 59);; */
-            background-color: rgb(39, 39, 39);;
+            background-color: rgb(59, 59, 59);
+            /* background-color: #00bf63; */
+            /* background-color: #2D3A54; */
 
 
 
         }
         #ctn0{
-            /* background-color: rgb(31, 31, 31); */
+            background-color: rgb(255, 255, 255);
             width: 70%;
             /* position: relative; */
             /* height: 100vh; */
@@ -72,33 +77,59 @@
                 transform: scale(1.1);
             } ;
         }
-        .backgrnd_img{
-            /* background-image: url(src/docs/bly_bckgrnd.PNG); */
+        .banner_zero{
+            /* background-image: url(src/docs/bly_bckgrnd.PNG);
             background-size: 160%;
             background-repeat: no-repeat;
             background-position-x:center ;
-            background-position-y:center ;
-            height: 400px;
+            background-position-y:center ; */
+            height: 300px;
             /* opacity: 0.7; */
-            /* background-color: antiquewhite; */
+            background-color: rgb(255, 255, 255);
             /* width: 100%; */
             
         }
-        #banner0{
-            /* opacity: 1; */
-            background-image: url(src/Bly_txtWhite.svg);
-            background-size: 50%;
-            background-repeat: no-repeat;
-            background-position-x:center ;
-            background-position-y:center ;
-            width: 100%;
-            height: 300px;
-            /* background-color: aqua; */
+        #iconleft{
+            /* background-color: #eb614c; */
+            display: flex;
+            justify-content: center;
+            vertical-align: middle;
+            /* margin: 30px 100px; */
+            margin: auto;
+            div{
+                /* opacity: 1; */
+                background-image: url(src/docs/echologo2.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position-x:center ;
+                background-position-y:center ;
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                background-color: #00bf63;
+
+            }
+        }
+        #iconright{
+            height: 150px;
+            /* margin: 30px s100px; */
+            margin: auto;
+            text-align: center;
+            /* background-color: #2D3A54; */
+            h1{
+                font-weight: 600;
+                font-size: 90px;
+            }
+            p{
+                font-weight: 600;
+
+            }
         }
         #bannerinfo{
             padding: 10px;
             display: flex;
             justify-content: end;
+            /* background-color: aqua; */
         }
         .text0{
             /* background-color: aqua; */
@@ -111,32 +142,45 @@
         .itm{
             display: flex;
             justify-content: center;
+            /* height: 200px; */
+            background-color: rgb(255, 255, 255);
         }
         .itm2{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; 
+        }
+        .itm3{
             width: 100%;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
         }
         
         .zone1 {
-            background-image: url(src/docs/Lyb_normal.svg);
+            background-image: url(src/docs/echo_smrtphn.png);
             background-size: contain;
             background-repeat: no-repeat;
             background-position-x:center ;
             background-position-y:center ;
+            background-color: white;
             width: 50%;
-            height: 200px;
+            height: 400px;
         }
         .zone2 {
-            background-color: rgb(255, 255, 255);
-            background-image: url(src/docs/normal_black_trensparent.svg);
+            /* background-color: rgb(255, 255, 255); */
+            /* background-image: url(src/docs/normal_black_trensparent.svg);
             background-size: contain;
             background-repeat: no-repeat;
             background-position-x:center ;
-            background-position-y:center ;
+            background-position-y:center ; */
+            /* padding: 10px; */
+            background-color: rgb(255, 255, 255);
             width: 50%;
-            height: 200px;
+            height: 400px;
+            p{
+                margin: 10px;
+            }
         }
         .zone3 {
             background-color: #2D3A54;
@@ -159,7 +203,7 @@
             height: 400px;
         }
         .illu0{
-            background-image: url(src/docs/Bly_LogosPub_troel_ex.png);
+            background-image: url(src/docs/echopage2.png);
             background-size: contain;
             background-repeat: no-repeat;
             background-position-x:center ;
@@ -167,8 +211,9 @@
             /* background-color: #2D3A54; */
             background-color: #ffffff;
             width: 100%;
+            margin: auto;
             /* aspect-ratio: 1 / 1; */
-            height: 600px;
+            height: 350px;
         }
         .illu1{
             /* background-color: #6087d6; */
@@ -205,22 +250,36 @@
         }
         @media screen and (max-width: 750px) {
             .backgrnd_img{background-size: 250%;height: 200px;}
-            #banner0{height: 200px;}
-            #bannerinfo{
+            /* #banner0{height: 200px;} */
+            /* #bannerzero{height: 200px;} */
+            /* #bannerinfo{
                 position: absolute;
                 top: 0;
                 right: 0;
-            }
+            } */
             #ctn0{width: 100%;}
             .text0{width: 90%;}
             iframe{width: 90%;}
-            .illu0{height: 400px;}
+            .illu0{width: 90%;}
             .illu1{height: 300px;}
             .illu2{background-size: 100%;height: 300px;}
             .illu3{background-size: 70%;height: 200px;}
-            .itm2{width: 100%;height: 200px;}
+            /* .itm{height: 300px;} */
+            .itm2{width: 100%;}
             .zone3{height: 200px;}
             .zone4{height: 200px;}
+            #iconleft{ height: 80px;}
+            #iconright{ 
+                height: 80px;
+                /* margin: auto; */
+                /* width: 60%; */
+                h1{
+                font-size: 60px;
+                }
+                p{
+                font-size: 11px;
+                }
+            }
             /* .itm2 :nth-child(1) {width: 100%;}
             .itm2 :nth-child(2) {width: 100%;} */
         }
@@ -230,11 +289,19 @@
     <a class="returnbtn" href="index.html"><button></button></a>
     <div id="ctr0">
         <div id="ctn0">
-            <div class="backgrnd_img">
+            <div class="banner_zero">
                 <div id="bannerinfo">
                     <button id="language" onclick="ChangeLanguage()"></button>
                 </div>
-                <div id="banner0"></div>
+                <div class="itm3">
+                    <div id="iconleft">
+                        <div></div>
+                    </div>
+                    <div id="iconright">
+                        <h1>éc(h)os</h1>
+                        <p>le Magazine du Vivant | Basse Ardenne</p>
+                    </div>
+                </div>
             </div>
             <div class="itm bcolor1">
                 <div class="text0">
@@ -250,7 +317,17 @@
                     </p>
                 </div>
             </div>
-            <div class="illu0"></div>
+            <div class="itm">
+                <div class="itm2">
+                    <div class="zone1"></div>
+                    <div class="zone2">
+                        <p>
+                            Le joueur incarnera son propre pilote et devra remporter plusieurs courses et compétitions contre jusqu'à 20 adversaires.<br><br>
+                            La trame principale du jeu réside dans le mode carrière, où le joueur doit réussir plusieurs courses et défis pour accéder à des compétitions.<br>
+                        </p>
+                    </div>
+                </div>
+             </div>
             <div class="itm bcolor1">
                 <div class="text0 frtext">
                     <p>
@@ -265,14 +342,7 @@
                     </p>
                 </div>
             </div>
-            <div class="illu1"></div>
-            <div class="illu2"></div>
-            <!-- <div class="itm">
-               <div class="itm2">
-                <div class="zone1"></div>
-                <div class="zone2"></div>
-               </div>
-            </div> -->
+            <div class="illu0"></div>
             <div class="itm bcolor2">
                 <div class="text0 frtext">
                     <p>
@@ -301,33 +371,6 @@
                  <div class="zone4"></div>
                 </div>
              </div>
-            <!-- <div class="backgrnd_img">
-                <div class="illu3"></div>
-            </div> -->
-            <!-- <div class="itm">
-                <div class="text0">
-                    <p class="frtext">
-                        Le joueur pourra enregistrer ses scores et ses temps, et comparer ses résultats avec ses amis ainsi qu'avec d'autres joueurs du monde entier.<br><br>
-                        Le jeu mettra en avant la Belgique avec des courses se déroulant dans des lieux emblématiques du pays, accompagnées d'une playlist musicale composée par des artistes belges.<br><br>
-                        Une sortie sur Steam, Android, et iOS est prévue, ainsi qu'une éventuelle version console.<br>
-                        Le jeu est actuellement en cours de développement.<br><br>
-                        Une première démo jouable sera disponible d'ici le 1er janvier 2025.<br><br>
-                        <span>Tristan ROEL</span>
-                        <br><br><br>
-                        <br><br><br>
-                    </p>
-                    <p class="entext">
-                        The player will be able to save their scores and times, and compare their results with friends and other players worldwide.<br><br>
-                        The game will promote Belgium by featuring races in well-known locations across the country, along with a musical playlist created by Belgian artists.<br><br>
-                        A release on Steam, Android, and iOS is planned, with a potential console version as well.<br>
-                        The game is currently in development.<br><br>
-                        A first playable demo will be available by January 1st, 2025.<br><br>
-                        <span>Tristan ROEL</span>
-                        <br><br><br>
-                        <br><br><br>
-                    </p>
-                </div>
-            </div> -->
             <footer>
                 <div id="footerelem">
                     <a href="https://www.instagram.com/tristanroel/"target="_blank"></a>
@@ -338,12 +381,7 @@
                 </div>
                 <div><p style="color: white;">Copyright © 2024 t.roel</p></div>
             </footer>  
-            <!-- <iframe src="src//docs//gust racer is an arcade racing game.pdf" width="100%" height="600px"></iframe> -->
-            <!-- <object data="src/docs/gust racer is an arcade racing game.pdf" type="application/pdf" width="100%" height="600px">
-                <p>Votre navigateur ne peut pas afficher les PDF. Vous pouvez <a href="path/to/your-file.pdf">télécharger le fichier PDF ici</a>.</p>
-            </object> -->
-            <!-- <a href="src/docs/gust racer is an arcade racing game.pdf" target="_blank">Ouvrir le PDF dans un nouvel onglet</a> -->
-        </div>
+         </div>
     </div>
     <script src="main.js"></script>
 </body>
