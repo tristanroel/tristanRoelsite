@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Bot LightYear</title>
+    <title>echos</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kumbh+Sans:wght@800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
        *{
@@ -49,6 +49,7 @@
         }
         #ctn0{
             background-color: rgb(255, 255, 255);
+            /* background-color: rgb(224, 33, 33); */
             width: 70%;
             /* position: relative; */
             /* height: 100vh; */
@@ -62,11 +63,12 @@
             height: 100px;
             bottom: 10px;
             left: 10px;
+            z-index: 10;
             /* background-color: brown; */
             button{
                 height: 100px;
                 width: 100%;
-                background-image: url(src/icons/icons8-retour-101.png);
+                background-image: url(src/icons/iconretour.png);
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-color: rgba(255, 255, 255, 0);
@@ -85,6 +87,7 @@
             background-position-y:center ; */
             height: 300px;
             /* opacity: 0.7; */
+            /* background-color: rgb(255, 255, 255); */
             background-color: rgb(255, 255, 255);
             /* width: 100%; */
             
@@ -133,8 +136,9 @@
         }
         .text0{
             /* background-color: aqua; */
+            color: #2D3A54;
             margin: 30px 0;
-            width: 60%;
+            width: 70%;
             span{
                 font-weight: 800;
             }
@@ -168,16 +172,12 @@
             height: 400px;
         }
         .zone2 {
-            /* background-color: rgb(255, 255, 255); */
-            /* background-image: url(src/docs/normal_black_trensparent.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position-x:center ;
-            background-position-y:center ; */
-            /* padding: 10px; */
+            display: flex;
+            justify-content: center; /* centre horizontalement */
+            align-items: center;
+            text-align: center;
             background-color: rgb(255, 255, 255);
             width: 50%;
-            height: 400px;
             p{
                 margin: 10px;
             }
@@ -266,6 +266,7 @@
             .illu3{background-size: 70%;height: 200px;}
             /* .itm{height: 300px;} */
             .itm2{width: 100%;}
+            .zone1{background-size: 150%;}
             .zone3{height: 200px;}
             .zone4{height: 200px;}
             #iconleft{ height: 80px;}
@@ -307,12 +308,12 @@
                 <div class="text0">
                     <p class="frtext">
                         <span>
-                            ■ Développé avec le moteur Unity, utilisant Blender pour la modélisation des environnements et des modèles 3D, ainsi que l'API .NET pour le back-end.
+                            ■ Dans le cadre de la création d’un magazine écologique en ligne, dédié à la faune et à la biodiversité de la région de Wallonie, j’ai eu l’opportunité de développer l’ensemble du backend du site web. Ce projet vise à offrir une plateforme d'information accessible et interactive, mettant en avant les enjeux de conservation et de sensibilisation à la nature locale.
                         </span>
                     </p>
                     <p class="entext">
                         <span>
-                            ■ Developed using the Unity engine, with Blender for environment and 3D model creation, and the .NET API for the back-end.
+                            ■ As part of the creation of an online ecological magazine, focused on the wildlife and biodiversity of the Wallonia region, I had the opportunity to develop the entire backend of the website. This project aims to provide an accessible and interactive platform that highlights the importance of conservation and raising awareness about local nature.
                         </span>
                     </p>
                 </div>
@@ -321,24 +322,28 @@
                 <div class="itm2">
                     <div class="zone1"></div>
                     <div class="zone2">
-                        <p>
-                            Le joueur incarnera son propre pilote et devra remporter plusieurs courses et compétitions contre jusqu'à 20 adversaires.<br><br>
-                            La trame principale du jeu réside dans le mode carrière, où le joueur doit réussir plusieurs courses et défis pour accéder à des compétitions.<br>
-                        </p>
+                        <div class="frtext">
+                            <p>
+                                j'ai utilisé .NET 8 en combinaison avec Dapper pour garantir des performances optimales et une gestion efficace des données. Le site intègre une base de données conçue pour stocker les articles, en facilitant leur consultation par les lecteurs. Les rédacteurs du site peuvent se connecter via un système de connexion utilisateur sécurisé, leur permettant de rédiger et de publier des articles directement sur la plateforme.
+                            </p>
+                        </div>
+                        <div class="entext">
+                            <p>
+                                I used .NET 8 in combination with Dapper to ensure optimal performance and efficient data management. The website includes a database designed to store articles, making them easily accessible to readers. Site contributors can log in via a secure user authentication system, allowing them to write and publish articles directly on the platform.
+                            </p>
+                        </div>
                     </div>
                 </div>
              </div>
             <div class="itm bcolor1">
                 <div class="text0 frtext">
                     <p>
-                        Le joueur incarnera son propre pilote et devra remporter plusieurs courses et compétitions contre jusqu'à 20 adversaires.<br><br>
-                        La trame principale du jeu réside dans le mode carrière, où le joueur doit réussir plusieurs courses et défis pour accéder à des compétitions.<br>
+                        De plus, j'ai mis en place un système de sondages interactifs qui permettra d'impliquer la communauté dans des discussions autour des sujets environnementaux. Grâce à cette fonctionnalité, les utilisateurs pourront participer activement et donner leur avis sur diverses questions liées à l'écologie et à la préservation de la faune.
                     </p>
                 </div>
                 <div class="text0 entext">
                     <p>
-                        The player will embody their own driver and must win multiple races and competitions against up to 20 opponents.<br><br>
-                        The main storyline of the game revolves around the career mode, where the player must complete several races and challenges to access competitions.<br>
+                        Additionally, I implemented an interactive survey system to engage the community in discussions on environmental topics. Through this feature, users can actively participate and share their opinions on various issues related to ecology and wildlife preservation.
                     </p>
                 </div>
             </div>
@@ -346,31 +351,23 @@
             <div class="itm bcolor2">
                 <div class="text0 frtext">
                     <p>
-                        Le joueur incarnera son propre pilote et devra remporter plusieurs courses et compétitions contre jusqu'à 20 adversaires.<br><br>
-                        La trame principale du jeu réside dans le mode carrière, où le joueur doit réussir plusieurs courses et défis pour accéder à des compétitions.<br>
-                        Remporter des récompenses lors de ces compétitions permet de monter en rang et de débloquer de nouvelles étapes.<br><br>
-                        Tout au long du jeu, le joueur gagnera des crédits en fonction de son score lors des épreuves.<br>
-                        Ces crédits pourront être utilisés pour acheter d'autres véhicules, des améliorations, des éléments de personnalisation, et probablement bien d'autres choses...
+                        Le lancement officiel du site est prévu pour courant 2024, et j'ai hâte de voir ce projet apporter une nouvelle dynamique à la communication autour du vivant en Wallonie.
                         <br><br>
                     </p>
                 </div>
                 <div class="text0 entext">
                     <p>
-                        The player will embody their own driver and must win multiple races and competitions against up to 20 opponents.<br><br>
-                        The main storyline of the game revolves around the career mode, where the player must complete several races and challenges to access competitions.<br>
-                        Winning rewards in these competitions allows the player to rank up and unlock new stages.<br><br>
-                        Throughout the game, the player will earn credits based on their performance in events.<br>
-                        These credits can be spent on new vehicles, upgrades, customization options, and likely more...
+                        The official launch of the website is planned for 2024, and I am excited to see this project bring a fresh dynamic to environmental communication in Wallonia.
                         <br><br>
                     </p>
                 </div>
             </div>
-            <div class="itm">
+            <!-- <div class="itm">
                 <div class="itm2">
                  <div class="zone3"></div>
                  <div class="zone4"></div>
                 </div>
-             </div>
+             </div> -->
             <footer>
                 <div id="footerelem">
                     <a href="https://www.instagram.com/tristanroel/"target="_blank"></a>
